@@ -16,6 +16,9 @@ class Settings(BaseSettings):
 
     log_level: str = "INFO"
 
+    host: str = "0.0.0.0"
+    port: int = 8080
+
     model_config = SettingsConfigDict(
         env_file=".env",
         env_file_encoding="utf-8",
